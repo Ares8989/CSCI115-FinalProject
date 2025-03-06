@@ -1,0 +1,60 @@
+/*Author: Patrick Candy*/
+/*Student ID: 665571535*/
+
+/*Styling for header bar*/
+.header{
+    width: 100vw;
+    height: 100px;
+    border: 1px solid red;
+    background-color: red;
+}
+
+/*Styling for navigation bar*/
+.nav{
+    width: 125px;
+    height: 100vh;
+    border: 1px solid green;
+    background-color: green;
+}
+
+/*Styling for sidebar*/
+.sidebar{
+    width: 125px;
+    height:100vh;
+    border: 1px solid blue;
+    background-color: white;
+    
+}
+
+/*Styling for main body elements*/
+.main{
+    height: 350px;
+}
+
+/*Styling for background*/
+.background{
+    background-color: grey;
+} 
+
+/*Styling for footer elements*/
+.footer{
+    width: 100vw;
+    height: 50px;
+    border: 1px solid red;
+    background-color: red;
+}
+
+/*Pushes elements to the left*/
+.floatleft{
+    float: left;
+}
+
+/*pushes elements to the right*/
+.floatright{
+    float: right;
+}
+
+/*Removes all float properties*/
+.clearfloat{
+    clear: both;
+}
