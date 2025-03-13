@@ -3,18 +3,20 @@
 
 /*Styling for header bar*/
 .header{
-    width: 100vw;
-    height: 100px;
-    border: 1px solid red;
-    background-color: red;
+    /* font-size: 36px; */
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    /* margin-left: 20px; */
+    padding-top: 1px;
+    padding-bottom:2px
 }
 
-/*Styling for navigation bar*/
-.nav{
-    width: 125px;
-    height: 100vh;
-    border: 1px solid green;
-    background-color: green;
+body{
+    /*background-image: url(img/wooden-object2.png), url(img/texture1.jpg);*/
+    background-repeat: no-repeat, repeat;
+    background-attachment: fixed, scroll;
+    background-position: left bottom, center;
+    margin: 0px;
 }
 
 /*Styling for sidebar*/
@@ -22,13 +24,7 @@
     width: 125px;
     height:100vh;
     border: 1px solid blue;
-    background-color: white;
-    
-}
-
-/*Styling for main body elements*/
-.main{
-    height: 350px;
+    /*background-color: white; */   
 }
 
 /*Styling for background*/
@@ -41,7 +37,6 @@
     width: 100vw;
     height: 50px;
     border: 1px solid red;
-    background-color: red;
 }
 
 /*Pushes elements to the left*/
@@ -57,4 +52,39 @@
 /*Removes all float properties*/
 .clearfloat{
     clear: both;
+}
+.navbar{
+    background-color:#d1610c;
+    border-radius:30px;
+    position:sticky;
+    top: 20px;
+}
+
+.navbar ul{
+    overflow:auto;
+}
+
+.navbar li{
+    float: left;
+    list-style:none;
+    margin:15px 20px;
+}
+
+.navbar li a{
+    padding: 3px 4px;
+    text-decoration: none;
+    color:white;
+}
+
+.search1{
+    float: right;
+    margin: 15px 100px;
+}
+
+.searchtext{
+    border-radius: 30px;
+    border-color: black;
+    border-style: solid;
+    text-align: center;
+    padding: 2px;
 }
