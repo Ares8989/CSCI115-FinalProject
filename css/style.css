@@ -124,11 +124,13 @@ body{
 }
 .flexitem1{
     margin: 3px;
+    flex: 5 0 0;
+    flex-wrap: wrap;
 }
 .flexitem2{
     margin: 3px;
     background-color: transparent;
-    flex: 1 0 auto;
+    flex: 0.7 0 0;
 }
 
 /*items with the lowest order is shown last */
