@@ -1,42 +1,65 @@
 /*Author: Patrick Candy*/
 /*Student ID: 665571535*/
 
+/*set a default for all tags*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
 /*Styling for header bar*/
 .header{
-    /* font-size: 36px; */
-    color: black;
+    color: #010100;
     font-family: Arial, Helvetica, sans-serif;
-    /* margin-left: 20px; */
-    padding-top: 1px;
-    padding-bottom:2px
+    margin: 0px;
+    padding: 0px;
 }
 
 body{
-    /*background-image: url(img/wooden-object2.png), url(img/texture1.jpg);*/
     background-repeat: no-repeat, repeat;
     background-attachment: fixed, scroll;
     background-position: left bottom, center;
     margin: 0px;
 }
 
+.heading1{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.paragraph1{
+    font-size: 16px;
+    margin: 14px 0px;
+}
+
+.barheading{
+    font-weight: bold;
+    text-align: center;
+}
+
 /*Styling for sidebar*/
 .sidebar{
     width: 125px;
     height:100vh;
-    border: 1px solid blue;
-    /*background-color: white; */   
 }
 
 /*Styling for background*/
 .background{
-    background-color: grey;
+    /* background-color: rgb(212, 212, 146); */
+    background-color: #fdb750;
+    background-image: url(./img/45-degree-fabric-light.png);
 } 
 
 /*Styling for footer elements*/
 .footer{
     width: 100vw;
     height: 50px;
-    border: 1px solid red;
+
 }
 
 /*Pushes elements to the left*/
@@ -54,7 +77,7 @@ body{
     clear: both;
 }
 .navbar{
-    background-color:#d1610c;
+    background-color:#010100;
     border-radius:30px;
     position:sticky;
     top: 20px;
@@ -68,12 +91,17 @@ body{
     float: left;
     list-style:none;
     margin:15px 20px;
+    padding-bottom: 5px;
 }
 
 .navbar li a{
     padding: 3px 4px;
     text-decoration: none;
-    color:white;
+    color:#fd7f20;
+}
+
+.navbar li a:hover{
+    color:#fc2e20;
 }
 
 .search1{
@@ -88,3 +116,34 @@ body{
     text-align: center;
     padding: 2px;
 }
+
+.flexcontainer1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+}
+.flexitem1{
+    margin: 3px;
+}
+.flexitem2{
+    margin: 3px;
+    background-color: transparent;
+    flex: 1 0 auto;
+}
+
+/*items with the lowest order is shown last */
+.item1{
+    order:1;
+}
+.item2{
+    order:2;
+}
+.item3{
+    order:3;
+}
+.item4{
+    order:4;
+}
+
+/*color palette*/
+/*https://www.canva.com/colors/color-palettes/warm-sunset/*/
