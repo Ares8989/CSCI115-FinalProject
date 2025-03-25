@@ -36,6 +36,11 @@ input, select{
     font-weight: bold;
 }
 
+.heading2{
+    font-size: 24px;
+    font-weight: bold;  
+}
+
 .paragraph1{
     font-size: 16px;
     margin: 14px 0px;
