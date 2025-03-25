@@ -24,6 +24,7 @@ body{
     background-repeat: no-repeat, repeat;
     background-attachment: fixed, scroll;
     background-position: left bottom, center;
+    background-color: #fdb750;
     margin: 0px;
 }
 
@@ -48,6 +49,7 @@ input, select{
 
 .barheading{
     font-weight: bold;
+    font-size: larger;
     text-align: center;
 }
 
@@ -55,11 +57,11 @@ input, select{
 .sidebar{
     width: 125px;
     height:100vh;
+    text-align: center;
 }
 
 /*Styling for background*/
 .background{
-    /* background-color: rgb(212, 212, 146); */
     background-color: #fdb750;
     background-image: url(./img/45-degree-fabric-light.png);
 } 
