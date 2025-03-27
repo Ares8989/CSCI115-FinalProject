@@ -8,19 +8,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="VIU, Game Reviews">
     <meta name="robots" content="INDEX, FOLLOW">
-    <title>Gam3r Reviews: signup</title>
-    <link rel="stylesheet" href="./css/style.css">
-    <script type="text/javascript" src="java_script/review_rating.js"></script>
+    <title id="tabTitle"></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../java_script/review_rating.js"></script>
 </head>
 <body>
-    <script>let ratings=initializeRatingSystem()</script>
+    <script>
+        let ratings=initializeRatingSystem();
+        let reviewName="Control";//Specific for this review
+        let index=findIndex(reviewName,ratings);
+        writeToRatingSystem(ratings);   
+    </script>
     <div class="background">
     <div class="header">
         <nav class="navbar">
             <ul class="navbar ul">
-                <li class="navbar li"><a class="navbar li a" href="index.html">Main Page</a></li>
-                <li class="navbar li"><a class="navbar li a" href="reviews.html">Reviews</a></li>
-                <li class="navbar li"><a class="navbar li a" href="news.html">News</a></li>
+                <li class="navbar li"><a class="navbar li a" href="../index.html">Main Page</a></li>
+                <li class="navbar li"><a class="navbar li a" href="../news.html">News</a></li>
+                <li class="navbar li"><a class="navbar li a" href="../signup.html">Signup</a></li>
                 <li class="navbar li"><a class="navbar li a" href="mailto:patrick.candy@my.viu.ca">Contact</a></li>
                 <div class="search1">
                     <input class="searchtext" type="text" name="search" placeholder="Search this website">
@@ -62,35 +67,36 @@
             </div>
         </div>
         <div class="flexitem1 item2"><!-- Opens main body-->
-            <div class="heading1">Sign-up</div>
-            <div class="paragraph1">Sign-up to our news letter to get an email with the latest Gam3r N3ws!</div>
-            <form method="post" action="process.php">
-                <table>
+            <div id="reviewTitle" class="heading1"></div>
+            <div>Rate This review <button value="&#x2B89" onclick="upvoteReview(index,ratings); writeToRatingSystem(ratings);alert('Review upvoted');">&#x2B89</button> <button value="&#x2B8B" onclick="downvoteReview(index,ratings); writeToRatingSystem(ratings);alert('Review downvoted');">&#x2B8B</button></div>
+            <div class="heading2">Details</div>
+            <div class="paragraph1">
+                <table style="text-align: left;">
                     <tr>
-                        <td>First Name:</td>
-                        <td style="padding-left:5px"><input type="text" size="20" name="firstname"></td>
+                        <th>Publisher:</th><td style="padding-left: 5px;">Nintendo</td>
                     </tr>
                     <tr>
-                        <td>Last Name:</td>
-                        <td style="padding-left:5px"><input type="text" size="20" name="lastname"></td>
+                        <th>Release Date:</th><td style="padding-left: 5px;">1998</td>
                     </tr>
                     <tr>
-                        <td>Email Adress:</td> 
-                        <td style="padding-left:5px"><input type="text" size="20" name="email"></td>
+                        <th>Number of Players:</th><td style="padding-left: 5px;">1</td>
                     </tr>
                     <tr>
-                        <td>Language Of Correspondance:</td>
-                        <td style="padding-left:5px"><select name="languages">
-                            <option value="English">English</option>
-                            <option value="French">French</option>
-                        </select></td>
+                        <th>Systems Available:</th><td style="padding-left: 5px;">Nintendo 64, Nintendo Switch (via online subscription)</td>
+                    </tr>
                 </table>
-            </form>
-
+            </div>
+            <div class="heading2">Gameplay</div>
+            <div class="paragraph1">The Classic!</div>
+            <div class="heading2">Summary</div>
         </div><!--Closes the main body-->
     </div><!--Closes flexbox-->
     <div class="clearfloat"></div>
     <div class="footer">All rights reserved for Patrick Candy</div>
     </div><!--Closes Background-->
+    <script>
+        document.getElementById("reviewTitle").innerText=reviewName;
+        document.getElementById("tabTitle").innerText="Gam3r R3views: "+reviewName;
+    </script>
 </body>
 </html>

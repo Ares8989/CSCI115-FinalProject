@@ -28,6 +28,10 @@ body{
     margin: 0px;
 }
 
+li{
+    margin-left: 12px;
+}
+
 input, select{
     background-color: white;
 }
@@ -45,6 +49,10 @@ input, select{
 .paragraph1{
     font-size: 16px;
     margin: 14px 0px;
+}
+
+.listItems1{
+    font-size: 12px;
 }
 
 .barheading{
@@ -134,7 +142,7 @@ input, select{
     flex-wrap:nowrap;
 }
 .flexitem1{
-    margin: 3px;
+    margin: 5px;
     flex: 5 0 0;
     flex-wrap: wrap;
 }

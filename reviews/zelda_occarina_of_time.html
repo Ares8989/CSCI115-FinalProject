@@ -8,11 +8,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="VIU, Game Reviews">
     <meta name="robots" content="INDEX, FOLLOW">
-    <title>Gam3r Reviews:Zelda Occarina Of Time</title>
+    <title id="tabTitle"></title>
     <link rel="stylesheet" href="../css/style.css">
-    <script type="text/javascript" src="java_script/review_rating.js"></script>
+    <script type="text/javascript" src="../java_script/review_rating.js"></script>
 </head>
 <body>
+    <script>
+        let ratings=initializeRatingSystem();
+        let reviewName="Zelda Occarina of Time";//Specific for this review
+        let index=findIndex(reviewName,ratings);
+        writeToRatingSystem(ratings);   
+    </script>
     <div class="background">
     <div class="header">
         <nav class="navbar">
@@ -30,18 +36,39 @@
     <div class="flexcontainer1"><!--make the body items a flex box-->
         <div class="sidebar floatleft flexitem2 item1">
             <div class="barheading">Top Game Reviews</div>
+            <div class="listItems1">
+                <ol>
+                    <li id="Review0"></li>
+                    <li id="Review1"></li>
+                    <li id="Review2"></li>
+                    <li id="Review3"></li>
+                    <li id="Review4"></li>
+                    <script>
+                        ratings.sort(function(a, b){return a.popularity - b.popularity});
+                        document.getElementById("Review0").innerText=ratings[0].name;
+                        document.getElementById("Review1").innerText=ratings[1].name;
+                        document.getElementById("Review2").innerText=ratings[2].name;
+                        document.getElementById("Review3").innerText=ratings[3].name;
+                        document.getElementById("Review4").innerText=ratings[4].name;
+                    </script>
+                </ol>
+            </div>
 
         </div>
         <div class="sidebar floatright flexitem2 item3">
             <div class="barheading">Game Stores</div>
-            <div class="paragraph1"><a href="https://store.steampowered.com/" target="_blank">Steam</a></div>
-            <div class="paragraph1"><a href="https://store.epicgames.com/en-US/" target="_blank">Epic</a></div>
-            <div class="paragraph1"><a href="https://www.ubisoft.com/en-ca/" target="_blank">Ubisoft</a></div>
-            <div class="paragraph1"><a href="https://apps.microsoft.com/home?hl=en-us&gl=US" target="_blank">Microsoft</a></div>  
+            <div class="listItems1">
+                <ul style="list-style-type: none;">
+                    <li><a href="https://store.steampowered.com/" target="_blank">Steam</a></li>
+                    <li><a href="https://store.epicgames.com/en-US/" target="_blank">Epic</a></li>
+                    <li><a href="https://www.ubisoft.com/en-ca/" target="_blank">Ubisoft</a></li>
+                    <li><a href="https://apps.microsoft.com/home?hl=en-us&gl=US" target="_blank">Microsoft</a></li>  
+                </ul>
+            </div>
         </div>
         <div class="flexitem1 item2"><!-- Opens main body-->
-            <div class="heading1">Zelda Occarina Of Time</div>
-            <div>Rate This review <button value="&#x2B89" onclick="alert('Review Upvoted')">&#x2B89</button> <button value="&#x2B89" onclick="alert('Review Downvoted')">&#x2B89</button></div>
+            <div id="reviewTitle" class="heading1"></div>
+            <div>Rate This review <button value="&#x2B89" onclick="upvoteReview(index,ratings); writeToRatingSystem(ratings);alert('Review upvoted');">&#x2B89</button> <button value="&#x2B8B" onclick="downvoteReview(index,ratings); writeToRatingSystem(ratings);alert('Review downvoted');">&#x2B8B</button></div>
             <div class="heading2">Details</div>
             <div class="paragraph1">
                 <table style="text-align: left;">
@@ -67,5 +94,9 @@
     <div class="clearfloat"></div>
     <div class="footer">All rights reserved for Patrick Candy</div>
     </div><!--Closes Background-->
+    <script>
+        document.getElementById("reviewTitle").innerText=reviewName;
+        document.getElementById("tabTitle").innerText="Gam3r R3views: "+reviewName;
+    </script>
 </body>
 </html>
