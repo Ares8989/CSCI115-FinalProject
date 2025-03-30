@@ -38,14 +38,7 @@
                     <li id="Review2"></li>
                     <li id="Review3"></li>
                     <li id="Review4"></li>
-                    <script>
-                        ratings.sort(function(a, b){return a.popularity - b.popularity});
-                        document.getElementById("Review0").innerText=ratings[0].name;
-                        document.getElementById("Review1").innerText=ratings[1].name;
-                        document.getElementById("Review2").innerText=ratings[2].name;
-                        document.getElementById("Review3").innerText=ratings[3].name;
-                        document.getElementById("Review4").innerText=ratings[4].name;
-                    </script>
+                    <script>printTopFive(ratings);</script>
                 </ol>
             </div>
 
@@ -68,23 +61,24 @@
                 <table>
                     <tr>
                         <td>First Name:</td>
-                        <td style="padding-left:5px"><input type="text" size="20" name="firstname"></td>
+                        <td style="padding-left:5px"><input type="text" size="20" name="firstname" class="textbox"></td>
                     </tr>
                     <tr>
                         <td>Last Name:</td>
-                        <td style="padding-left:5px"><input type="text" size="20" name="lastname"></td>
+                        <td style="padding-left:5px"><input type="text" size="20" name="lastname" class="textbox"></td>
                     </tr>
                     <tr>
                         <td>Email Adress:</td> 
-                        <td style="padding-left:5px"><input type="text" size="20" name="email"></td>
+                        <td style="padding-left:5px"><input type="text" size="20" name="email" class="textbox"></td>
                     </tr>
                     <tr>
                         <td>Language Of Correspondance:</td>
-                        <td style="padding-left:5px"><select name="languages">
+                        <td style="padding-left:5px"><select name="languages" class="buttonstyle">
                             <option value="English">English</option>
                             <option value="French">French</option>
                         </select></td>
                 </table>
+                <button value="submit" class="buttonstyle" onlick="alert('Subscribed');">Submit</button>
             </form>
 
         </div><!--Closes the main body-->

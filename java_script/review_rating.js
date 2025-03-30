@@ -15,6 +15,7 @@ function readFromRatingSystem(){
 }
 
 function writeToRatingSystem(ratings){
+    ratings.sort(function(a, b){return b.popularity - a.popularity});
     localStorage.setItem("ratingsJSON",JSON.stringify(ratings));
     return;
 }
@@ -31,12 +32,14 @@ function findIndex(reviewName, ratings){
     return i++;
 }
 
-function upvoteReview(index, ratings){
+function upvoteReview(reviewName, ratings){
+    let index=findIndex(reviewName, ratings);
     ratings[index].popularity++;
     return;
 }
 
-function downvoteReview(index, ratings){
+function downvoteReview(reviewName, ratings){
+    let index=findIndex(reviewName, ratings);
     ratings[index].popularity--;
     return;    
 }
@@ -48,4 +51,23 @@ function createReviewObj(reviewName, ratings){
     }
     ratings.push(reviewObj);
     return;
+}
+
+function printTopFive(ratings){
+    if(ratings[0] != undefined){
+        document.getElementById("Review0").innerText=ratings[0].name;
+    }
+    if(ratings[1] != undefined){
+        document.getElementById("Review1").innerText=ratings[1].name;
+    }
+    if(ratings[2] != undefined){
+        document.getElementById("Review2").innerText=ratings[2].name;
+    }
+    if(ratings[3] != undefined){
+        document.getElementById("Review3").innerText=ratings[3].name;
+    }
+    if(ratings[4] != undefined){
+        document.getElementById("Review4").innerText=ratings[4].name;
+    }
+    return;    
 }

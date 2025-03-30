@@ -38,14 +38,7 @@
                     <li id="Review2"></li>
                     <li id="Review3"></li>
                     <li id="Review4"></li>
-                    <script>
-                        ratings.sort(function(a, b){return a.popularity - b.popularity});
-                        document.getElementById("Review0").innerText=ratings[0].name;
-                        document.getElementById("Review1").innerText=ratings[1].name;
-                        document.getElementById("Review2").innerText=ratings[2].name;
-                        document.getElementById("Review3").innerText=ratings[3].name;
-                        document.getElementById("Review4").innerText=ratings[4].name;
-                    </script>
+                    <script>printTopFive(ratings);</script>
                 </ol>
             </div>
 

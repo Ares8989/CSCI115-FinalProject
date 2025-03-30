@@ -51,6 +51,23 @@ input, select{
     margin: 14px 0px;
 }
 
+.buttonstyle{
+    background-color: white;
+    padding: 3px 5px;
+    border-style: groove;
+    border-color: #010100;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.textbox{
+    background-color: white;
+    padding: 3px 5px;
+    border-color: #010100;
+    border-width: 1px;
+    border-style: groove;
+}
+
 .listItems1{
     font-size: 12px;
 }
@@ -71,7 +88,7 @@ input, select{
 /*Styling for background*/
 .background{
     background-color: #fdb750;
-    background-image: url(./img/45-degree-fabric-light.png);
+    background-image: url(../img/45-degree-fabric-light.png);
 } 
 
 /*Styling for footer elements*/

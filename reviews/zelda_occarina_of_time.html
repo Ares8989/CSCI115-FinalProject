@@ -16,7 +16,6 @@
     <script>
         let ratings=initializeRatingSystem();
         let reviewName="Zelda Occarina of Time";//Specific for this review
-        let index=findIndex(reviewName,ratings);
         writeToRatingSystem(ratings);   
     </script>
     <div class="background">
@@ -24,6 +23,7 @@
         <nav class="navbar">
             <ul class="navbar ul">
                 <li class="navbar li"><a class="navbar li a" href="../index.html">Main Page</a></li>
+                <li class="navbar li"><a class="navbar li a" href="../reviews.html">Reviews</a></li>
                 <li class="navbar li"><a class="navbar li a" href="../news.html">News</a></li>
                 <li class="navbar li"><a class="navbar li a" href="../signup.html">Signup</a></li>
                 <li class="navbar li"><a class="navbar li a" href="mailto:patrick.candy@my.viu.ca">Contact</a></li>
@@ -43,14 +43,7 @@
                     <li id="Review2"></li>
                     <li id="Review3"></li>
                     <li id="Review4"></li>
-                    <script>
-                        ratings.sort(function(a, b){return a.popularity - b.popularity});
-                        document.getElementById("Review0").innerText=ratings[0].name;
-                        document.getElementById("Review1").innerText=ratings[1].name;
-                        document.getElementById("Review2").innerText=ratings[2].name;
-                        document.getElementById("Review3").innerText=ratings[3].name;
-                        document.getElementById("Review4").innerText=ratings[4].name;
-                    </script>
+                    <script>printTopFive(ratings);</script>
                 </ol>
             </div>
 
@@ -68,7 +61,7 @@
         </div>
         <div class="flexitem1 item2"><!-- Opens main body-->
             <div id="reviewTitle" class="heading1"></div>
-            <div>Rate This review <button value="&#x2B89" onclick="upvoteReview(index,ratings); writeToRatingSystem(ratings);alert('Review upvoted');">&#x2B89</button> <button value="&#x2B8B" onclick="downvoteReview(index,ratings); writeToRatingSystem(ratings);alert('Review downvoted');">&#x2B8B</button></div>
+            <div>Rate this review <button value="&#x2B89" style="color:green;" onclick="upvoteReview(reviewName,ratings); writeToRatingSystem(ratings);alert('Review upvoted');">&#x2B89</button> <button value="&#x2B8B" style="color:#fc2e20;" onclick="downvoteReview(reviewName,ratings); writeToRatingSystem(ratings);alert('Review downvoted');">&#x2B8B</button></div>
             <div class="heading2">Details</div>
             <div class="paragraph1">
                 <table style="text-align: left;">
