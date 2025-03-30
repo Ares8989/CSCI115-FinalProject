@@ -16,6 +16,8 @@
     <script>
         let ratings=initializeRatingSystem();
         let reviewName="Zelda Occarina of Time";//Specific for this review
+        let documentName=document.documentURI;
+        createReviewObj(reviewName,documentName,ratings);
         writeToRatingSystem(ratings);   
     </script>
     <div class="background">
@@ -38,11 +40,11 @@
             <div class="barheading">Top Game Reviews</div>
             <div class="listItems1">
                 <ol>
-                    <li id="Review0"></li>
-                    <li id="Review1"></li>
-                    <li id="Review2"></li>
-                    <li id="Review3"></li>
-                    <li id="Review4"></li>
+                    <li><a id="Review0"></a></li>
+                    <li><a id="Review1"></a></li>
+                    <li><a id="Review2"></a></li>
+                    <li><a id="Review3"></a></li>
+                    <li><a id="Review4"></a></li>
                     <script>printTopFive(ratings);</script>
                 </ol>
             </div>
