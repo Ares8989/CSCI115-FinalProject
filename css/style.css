@@ -168,6 +168,7 @@ input, select{
     display: flex;
     flex-direction: row;
     flex-wrap:nowrap;
+    flex:auto;
 }
 .flexcontainer2{
     display: flex;
