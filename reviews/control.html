@@ -24,13 +24,13 @@
     <div class="background">
     <div class="header">
         <nav class="navbar">
-            <ul class="navbar ul">
-                <li class="navbar li"><a class="navbar li a" href="../index.html">Main Page</a></li>
-                <li class="navbar li"><a class="navbar li a" href="../reviews.html">Reviews</a></li>
-                <li class="navbar li"><a class="navbar li a" href="../news.html">News</a></li>
-                <li class="navbar li"><a class="navbar li a" href="../signup.html">Signup</a></li>
-                <li class="navbar li"><a class="navbar li a" href="mailto:patrick.candy@my.viu.ca">Contact</a></li>
-                <div class="search1">
+            <ul class="flexcontainer1, navbar ul">
+                <li class="flexitem3, navbar li" style="margin-left: 15px;"><a class="navbar li a" href="../index.html">Main Page</a></li>
+                <li class="flexitem3, navbar li"><a class="navbar li a" href="../reviews.html">Reviews</a></li>                
+                <li class="flexitem3, navbar li"><a class="navbar li a" href="../news.html">News</a></li>
+                <li class="flexitem3, navbar li"><a class="navbar li a" href="../signup.html">Signup</a></li>
+                <li class="flexitem3, navbar li"><a class="navbar li a" href="mailto:patrick.candy@my.viu.ca">Contact</a></li>
+                <div class="search1, flexitem4">
                     <input class="searchtext" type="text" name="search" placeholder="Search this website">
                 </div>
             </ul>
@@ -64,7 +64,7 @@
         </div>
         <div class="flexitem1 item2"><!-- Opens main body-->
             <div id="reviewTitle" class="heading1"></div>
-            <div>Rate this review <button value="&#x2B89" style="color:green;" onclick="upvoteReview(reviewName,ratings); writeToRatingSystem(ratings);alert('Review upvoted');">&#x2B89</button> <button value="&#x2B8B" style="color:#fc2e20;" onclick="downvoteReview(reviewName,ratings); writeToRatingSystem(ratings);alert('Review downvoted');">&#x2B8B</button></div>
+            <div>Rate this review <button style="color:green;" onclick="upvoteReview(reviewName,ratings); writeToRatingSystem(ratings);alert('Review upvoted');">&#9650</button> <button style="color:#fc2e20;" onclick="downvoteReview(reviewName,ratings); writeToRatingSystem(ratings);alert('Review downvoted');">&#9660</button></div>
             <div class="heading2">Details</div>
             <div class="paragraph1">
                 <table style="text-align: left;">
