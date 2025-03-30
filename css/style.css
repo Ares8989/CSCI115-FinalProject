@@ -209,11 +209,7 @@ input, select{
     margin: 3px;
     flex: 0 0 0;
 }
-.flexitem4{
-    margin: 15px;
-    float: right;
-    vertical-align: middle;
-}
+
 .flexitem5{
     flex:auto;
     border:#010100;
