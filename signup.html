@@ -3,6 +3,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,79 +12,83 @@
     <title>Gam3r Reviews: signup</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="#">
-    <script  src="java_script/review_rating.js"></script>
+    <script src="java_script/review_rating.js"></script>
 </head>
+
 <body>
-    <script>let ratings=initializeRatingSystem()</script>
+    <script>let ratings = initializeRatingSystem()</script>
     <div class="background">
-    <div class="header">
-        <nav class="navbar">
-            <ul class="flexcontainer1, navbar ul">
-                <li class="flexitem3, navbar li" style="margin-left: 15px;"><a class="navbar li a" href="index.html">Main Page</a></li>
-                <li class="flexitem3, navbar li"><a class="navbar li a" href="reviews.html">Reviews</a></li>                
-                <li class="flexitem3, navbar li"><a class="navbar li a" href="news.html">News</a></li>
-                <li class="flexitem3, navbar li"><a class="navbar li a" href="signup.html">Signup</a></li>
-                <li class="flexitem3, navbar li"><a class="navbar li a" href="mailto:patrick.candy@my.viu.ca">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="flexcontainer1"><!--make the body items a flex box-->
-        <div class="sidebar floatleft flexitem2 item1">
-            <div class="barheading">Top Game Reviews</div>
-            <div class="listItems1">
-                <ol>
-                    <li><a id="Review0"></a></li>
-                    <li><a id="Review1"></a></li>
-                    <li><a id="Review2"></a></li>
-                    <li><a id="Review3"></a></li>
-                    <li><a id="Review4"></a></li>
-                    <script>printTopFive(ratings);</script>
-                </ol>
-            </div>
-
-        </div>
-        <div class="sidebar floatright flexitem2 item3">
-            <div class="barheading">Game Stores</div>
-            <div class="listItems1">
-                <ul style="list-style-type: none;">
-                    <li><a href="https://store.steampowered.com/" target="_blank">Steam</a></li>
-                    <li><a href="https://store.epicgames.com/en-US/" target="_blank">Epic</a></li>
-                    <li><a href="https://www.ubisoft.com/en-ca/" target="_blank">Ubisoft</a></li>
-                    <li><a href="https://apps.microsoft.com/home?hl=en-us&gl=US" target="_blank">Microsoft</a></li>  
+        <div class="header">
+            <nav class="navbar">
+                <ul class="flexcontainer1, navbar ul">
+                    <li class="flexitem3, navbar li" style="margin-left: 15px;"><a class="navbar li a"
+                            href="index.html">Main Page</a></li>
+                    <li class="flexitem3, navbar li"><a class="navbar li a" href="reviews.html">Reviews</a></li>
+                    <li class="flexitem3, navbar li"><a class="navbar li a" href="news.html">News</a></li>
+                    <li class="flexitem3, navbar li"><a class="navbar li a" href="signup.html">Signup</a></li>
+                    <li class="flexitem3, navbar li"><a class="navbar li a"
+                            href="mailto:patrick.candy@my.viu.ca">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
-        <div class="flexitem1 item2"><!-- Opens main body-->
-            <div class="heading1">Sign-up</div>
-            <div class="paragraph1">Sign-up to our news letter to get an email with the latest Gam3r N3ws!</div>
-            <form method="post" action="process.php">
-                <table class="flexcontainer1">
-                    <tr>
-                        <th>First Name:</th>
-                        <td ><input type="text" size="20" name="firstname" class="textbox, flexitem5"></td>
-                    </tr>
-                    <tr>
-                        <th>Last Name:</th>
-                        <td><input type="text" size="20" name="lastname" class="textbox, flexitem5"></td>
-                    </tr>
-                    <tr>
-                        <th>Email Adress:</th> 
-                        <td><input type="text" size="20" name="email" class="textbox, flexitem5"></td>
-                    </tr>
-                    <tr>
-                        <th>Language Of Correspondance:</th>
-                        <td><select name="languages" class="buttonstyle">
-                            <option value="English">English</option>
-                            <option value="French">French</option>
-                        </select></td>
-                </table>
-                <button value="submit" class="buttonstyle" onlick="alert('Subscribed');">Submit</button>
-            </form>
+        <div class="flexcontainer1"><!--make the body items a flex box-->
+            <div class="sidebar floatleft flexitem2 item1">
+                <div class="barheading">Top Game Reviews</div>
+                <div class="listItems1">
+                    <ol>
+                        <li><a id="Review0"></a></li>
+                        <li><a id="Review1"></a></li>
+                        <li><a id="Review2"></a></li>
+                        <li><a id="Review3"></a></li>
+                        <li><a id="Review4"></a></li>
+                        <script>printTopFive(ratings);</script>
+                    </ol>
+                </div>
 
-        </div><!--Closes the main body-->
-    </div><!--Closes flexbox-->
-    <div class="clearfloat"></div>
-    <div class="footer"> All rights reserved for Patrick Candy</div>
+            </div>
+            <div class="sidebar floatright flexitem2 item3">
+                <div class="barheading">Game Stores</div>
+                <div class="listItems1">
+                    <ul style="list-style-type: none;">
+                        <li><a href="https://store.steampowered.com/" target="_blank">Steam</a></li>
+                        <li><a href="https://store.epicgames.com/en-US/" target="_blank">Epic</a></li>
+                        <li><a href="https://www.ubisoft.com/en-ca/" target="_blank">Ubisoft</a></li>
+                        <li><a href="https://apps.microsoft.com/home?hl=en-us&gl=US" target="_blank">Microsoft</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flexitem1 item2"><!-- Opens main body-->
+                <div class="heading1">Sign-up</div>
+                <div class="paragraph1">Sign-up to our news letter to get an email with the latest Gam3r N3ws!</div>
+                <form method="post" action="process.php">
+                    <table class="flexcontainer1">
+                        <tr>
+                            <th>First Name:</th>
+                            <td><input type="text" size="20" name="firstname" class="textbox, flexitem5"></td>
+                        </tr>
+                        <tr>
+                            <th>Last Name:</th>
+                            <td><input type="text" size="20" name="lastname" class="textbox, flexitem5"></td>
+                        </tr>
+                        <tr>
+                            <th>Email Adress:</th>
+                            <td><input type="text" size="20" name="email" class="textbox, flexitem5"></td>
+                        </tr>
+                        <tr>
+                            <th>Language Of Correspondance:</th>
+                            <td><select name="languages" class="buttonstyle">
+                                    <option value="English">English</option>
+                                    <option value="French">French</option>
+                                </select></td>
+                    </table>
+                    <button value="submit" class="buttonstyle" onlick="alert('Subscribed');">Submit</button>
+                </form>
+
+            </div><!--Closes the main body-->
+        </div><!--Closes flexbox-->
+        <div class="clearfloat"></div>
+        <div class="footer"> All rights reserved for Patrick Candy</div>
     </div><!--Closes Background-->
 </body>
+
 </html>

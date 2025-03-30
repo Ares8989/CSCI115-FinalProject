@@ -3,6 +3,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,56 +14,61 @@
     <link rel="shortcut icon" href="#">
     <script src="java_script/review_rating.js"></script>
 </head>
-<body>
-    <script>let ratings=initializeRatingSystem()</script>
-    <div class="background">
-    <div class="header">
-        <nav class="navbar">
-            <ul class="flexcontainer1, navbar ul">
-                <li class="flexitem3, navbar li" style="margin-left: 15px;"><a class="navbar li a" href="index.html">Main Page</a></li>
-                <li class="flexitem3, navbar li"><a class="navbar li a" href="reviews.html">Reviews</a></li>                
-                <li class="flexitem3, navbar li"><a class="navbar li a" href="news.html">News</a></li>
-                <li class="flexitem3, navbar li"><a class="navbar li a" href="signup.html">Signup</a></li>
-                <li class="flexitem3, navbar li"><a class="navbar li a" href="mailto:patrick.candy@my.viu.ca">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="flexcontainer1"><!--make the body items a flex box-->
-        <div class="sidebar floatleft flexitem2 item1">
-            <div class="barheading">Top Game Reviews</div>
-            <div class="listItems1">
-                <ol>
-                    <li><a id="Review0"></a></li>
-                    <li><a id="Review1"></a></li>
-                    <li><a id="Review2"></a></li>
-                    <li><a id="Review3"></a></li>
-                    <li><a id="Review4"></a></li>
-                    <script>printTopFive(ratings);</script>
-                </ol>
-            </div>
 
-        </div>
-        <div class="sidebar floatright flexitem2 item3">
-            <div class="barheading">Game Stores</div>
-            <div class="listItems1">
-                <ul style="list-style-type: none;">
-                    <li><a href="https://store.steampowered.com/" target="_blank">Steam</a></li>
-                    <li><a href="https://store.epicgames.com/en-US/" target="_blank">Epic</a></li>
-                    <li><a href="https://www.ubisoft.com/en-ca/" target="_blank">Ubisoft</a></li>
-                    <li><a href="https://apps.microsoft.com/home?hl=en-us&gl=US" target="_blank">Microsoft</a></li>  
+<body>
+    <script>let ratings = initializeRatingSystem()</script>
+    <div class="background">
+        <div class="header">
+            <nav class="navbar">
+                <ul class="flexcontainer1, navbar ul">
+                    <li class="flexitem3, navbar li" style="margin-left: 15px;"><a class="navbar li a"
+                            href="index.html">Main Page</a></li>
+                    <li class="flexitem3, navbar li"><a class="navbar li a" href="reviews.html">Reviews</a></li>
+                    <li class="flexitem3, navbar li"><a class="navbar li a" href="news.html">News</a></li>
+                    <li class="flexitem3, navbar li"><a class="navbar li a" href="signup.html">Signup</a></li>
+                    <li class="flexitem3, navbar li"><a class="navbar li a"
+                            href="mailto:patrick.candy@my.viu.ca">Contact</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
-        <div class="flexitem1 item2"><!-- Opens main body-->
-            <div class="heading1">List of all Gam3r Reviews</div>
-            <ol>
-                <li><a class="paragraph1" href="./reviews/zelda_occarina_of_time.html">Zelda Occarina of Time</a></li>
-                <li><a class="paragraph1" href="./reviews/control.html">Control</a></li>
-            </ol>
-        </div><!--Closes the main body-->
-    </div><!--Closes flexbox-->
-    <div class="clearfloat"></div>
-    <div class="footer">All rights reserved for Patrick Candy</div>
+        <div class="flexcontainer1"><!--make the body items a flex box-->
+            <div class="sidebar floatleft flexitem2 item1">
+                <div class="barheading">Top Game Reviews</div>
+                <div class="listItems1">
+                    <ol>
+                        <li><a id="Review0"></a></li>
+                        <li><a id="Review1"></a></li>
+                        <li><a id="Review2"></a></li>
+                        <li><a id="Review3"></a></li>
+                        <li><a id="Review4"></a></li>
+                        <script>printTopFive(ratings);</script>
+                    </ol>
+                </div>
+
+            </div>
+            <div class="sidebar floatright flexitem2 item3">
+                <div class="barheading">Game Stores</div>
+                <div class="listItems1">
+                    <ul style="list-style-type: none;">
+                        <li><a href="https://store.steampowered.com/" target="_blank">Steam</a></li>
+                        <li><a href="https://store.epicgames.com/en-US/" target="_blank">Epic</a></li>
+                        <li><a href="https://www.ubisoft.com/en-ca/" target="_blank">Ubisoft</a></li>
+                        <li><a href="https://apps.microsoft.com/home?hl=en-us&gl=US" target="_blank">Microsoft</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="flexitem1 item2"><!-- Opens main body-->
+                <div class="heading1">List of all Gam3r Reviews</div>
+                <ol>
+                    <li><a class="paragraph1" href="./reviews/zelda_occarina_of_time.html">Zelda Occarina of Time</a>
+                    </li>
+                    <li><a class="paragraph1" href="./reviews/control.html">Control</a></li>
+                </ol>
+            </div><!--Closes the main body-->
+        </div><!--Closes flexbox-->
+        <div class="clearfloat"></div>
+        <div class="footer">All rights reserved for Patrick Candy</div>
     </div><!--Closes Background-->
 </body>
+
 </html>
