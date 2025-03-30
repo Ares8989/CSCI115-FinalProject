@@ -136,7 +136,8 @@ input, select{
 .navbar li{
     float: left;
     list-style:none;
-    margin:15px 20px;
+    vertical-align: middle;
+    margin:15px auto;
     padding-bottom: 5px;
 }
 
@@ -186,7 +187,6 @@ input, select{
     margin: 15px;
     float: right;
     vertical-align: middle;
-    flex: 1 2;
 }
 
 /*items with the lowest order is shown last */
