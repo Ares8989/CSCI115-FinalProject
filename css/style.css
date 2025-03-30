@@ -118,17 +118,21 @@ input, select{
 .footer{
     width: 100vw;
     height: 50px;
-
+    position:fixed;
+    left:0;
+    bottom:0;
 }
 
 /*Pushes elements to the left*/
 .floatleft{
     float: left;
+    left:0;
 }
 
 /*pushes elements to the right*/
 .floatright{
     float: right;
+    right:0;
 }
 
 /*Removes all float properties*/
@@ -144,6 +148,7 @@ input, select{
 
 .navbar ul{
     overflow:auto;
+    width: 100vmax;
 }
 
 .navbar li{
