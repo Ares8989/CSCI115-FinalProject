@@ -178,7 +178,7 @@ input, select{
 }
 .flexitem1{
     margin: 5px;
-    flex: 5 0 0;
+    flex: 5 1 0;
     flex-wrap: wrap;
 }
 .flexitem2{
