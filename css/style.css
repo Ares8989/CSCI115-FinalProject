@@ -24,13 +24,17 @@ body{
 } 
 
 .background{
+    display:flex;
+    flex-direction: column;
     background-color: #fdb750;
     background-image: url(../img/checkered-light-emboss.png);
     background-repeat:repeat;
     background-position: left bottom, center;
     background-attachment:scroll;
     margin: 0px;
+    height:100vh;
 }
+
 
 /*Styling for Tables rows*/
 td{
@@ -96,6 +100,7 @@ input, select{
 
 .listItems1{
     font-size: 12px;
+    margin-left: 7px;
 }
 
 .barheading{
@@ -107,7 +112,6 @@ input, select{
 /*Styling for sidebar*/
 .sidebar{
     width: 125px;
-    height:100vh;
     text-align: center;
 }
 
@@ -128,13 +132,14 @@ input, select{
     clear: both;
 }
 
+.spacer{
+    height:100%;
+}
+
 /*Styling for footer elements*/
 .footer{
     width: 100vw;
     height: 50px;
-    position:fixed;
-    left:0;
-    bottom:0;
 }
 
 /*Search bar Styling*/
@@ -169,7 +174,7 @@ input, select{
 .flexcontainer3{
     display: flex;
     flex-direction: row;
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     list-style-type: none;  
 }
 
@@ -196,7 +201,6 @@ input, select{
     border-width: 1px;
     border-radius: 5px;
 }
-
 
 /*Flex Item ordering - items with the lowest order is shown last */
 .item1{
@@ -244,7 +248,11 @@ input, select{
     float:right;
 }
 
-
+@media (max-width:480px) {
+    .searchtext{
+        display:none;
+    }
+}
 
 /*color palette*/
 /*https://www.canva.com/colors/color-palettes/warm-sunset/*/
