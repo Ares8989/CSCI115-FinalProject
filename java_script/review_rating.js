@@ -20,18 +20,6 @@ function writeToRatingSystem(ratings){
     return;
 }
 
-
-// function findIndex(reviewName, ratings){
-//     let i=0;
-//     for (; i < ratings.length;i++){
-//         if (ratings[i].name==reviewName){
-//             return i;//return the index of the array where the review was found
-//         }
-//     }
-//     createReviewObj(reviewName, ratings);
-//     return i++;
-// }
-
 function findIndex(reviewName, ratings){
     let i=0;
     for (; i < ratings.length;i++){
@@ -53,15 +41,6 @@ function downvoteReview(reviewName, ratings){
     ratings[index].popularity--;
     return;    
 }
-
-// function createReviewObj(reviewName, ratings){
-//     reviewObj={
-//         name: reviewName,
-//         popularity: 0
-//     }
-//     ratings.push(reviewObj);
-//     return;
-// }
 
 function createReviewObj(reviewName,documentName,ratings){
     let index=findIndex(reviewName, ratings);
@@ -101,22 +80,3 @@ function printTopFive(ratings){
     }
     return;    
 }
-
-// function printTopFive(ratings){
-//     if(ratings[0] != undefined){
-//         document.getElementById("Review0").innerText=ratings[0].name;
-//     }
-//     if(ratings[1] != undefined){
-//         document.getElementById("Review1").innerText=ratings[1].name;
-//     }
-//     if(ratings[2] != undefined){
-//         document.getElementById("Review2").innerText=ratings[2].name;
-//     }
-//     if(ratings[3] != undefined){
-//         document.getElementById("Review3").innerText=ratings[3].name;
-//     }
-//     if(ratings[4] != undefined){
-//         document.getElementById("Review4").innerText=ratings[4].name;
-//     }
-//     return;    
-// }

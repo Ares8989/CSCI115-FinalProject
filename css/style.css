@@ -13,23 +13,26 @@
     background: transparent;    
 }
 
-/*Styling for header bar*/
-.header{
-    color: #010100;
-    margin: 0px;
-    padding: 0px;
-    min-width: max-content;
-}
-
+/*Styling for background*/
 body{
-    background-repeat: no-repeat, repeat;
-    background-attachment: fixed, scroll;
-    background-position: left bottom, center;
     background-color: #fdb750;
-    
+    background-image: url(../img/checkered-light-emboss.png);
+    background-repeat:repeat;
+    background-position: left bottom, center;
+    background-attachment:scroll;
+    margin: 0px;
+} 
+
+.background{
+    background-color: #fdb750;
+    background-image: url(../img/checkered-light-emboss.png);
+    background-repeat:repeat;
+    background-position: left bottom, center;
+    background-attachment:scroll;
     margin: 0px;
 }
 
+/*Styling for Tables rows*/
 td{
     padding-left:5px;
 }
@@ -37,10 +40,8 @@ td{
 th{
     text-align: left;
 }
-li{
-    margin-left: 12px;
-}
 
+/*Styling for Lists*/
 li a:visited, li a:link{
     color:black;
     text-decoration: none;
@@ -53,11 +54,12 @@ li a:hover{
 
 input, select{
     background-color: white;
+    border: 1px;
     padding: 3px 5px;
     min-width: 0;
 }
 
-
+/*Text Styling*/
 .heading1{
     font-size: 36px;
     font-weight: bold;
@@ -73,6 +75,7 @@ input, select{
     margin: 14px 0px;
 }
 
+/*Styling for Forms*/
 .buttonstyle{
     background-color: white;
     padding: 3px 5px;
@@ -108,21 +111,6 @@ input, select{
     text-align: center;
 }
 
-/*Styling for background*/
-.background{
-    background-color: #fdb750;
-    /* background-image: url(../img/45-degree-fabric-light.png); */
-} 
-
-/*Styling for footer elements*/
-.footer{
-    width: 100vw;
-    height: 50px;
-    position:fixed;
-    left:0;
-    bottom:0;
-}
-
 /*Pushes elements to the left*/
 .floatleft{
     float: left;
@@ -139,40 +127,17 @@ input, select{
 .clearfloat{
     clear: both;
 }
-.navbar{
-    background-color:#010100;
-    border-radius:30px;
-    position:sticky;
-    top: 20px;
+
+/*Styling for footer elements*/
+.footer{
+    width: 100vw;
+    height: 50px;
+    position:fixed;
+    left:0;
+    bottom:0;
 }
 
-.navbar ul{
-    overflow:auto;
-    width: 100vmax;
-}
-
-.navbar li{
-    float: left;
-    list-style:none;
-    vertical-align: middle;
-    margin:15px auto;
-    padding-bottom: 5px;
-}
-
-.navbar li a{
-    padding: 3px 4px;
-    text-decoration: none;
-    color:#fd7f20;
-}
-
-.navbar li a:hover{
-    color:#fc2e20;
-}
-
-.search1{
-    float: right;
-    margin: 15px 100px;
-}
+/*Search bar Styling*/
 
 .searchtext{
     border-radius: 30px;
@@ -180,20 +145,34 @@ input, select{
     border-style: solid;
     text-align: center;
     padding: 2px;
+    margin-top:2px;
+    margin-right:3px;
 }
 
+/*Flex container Styling*/
 .flexcontainer1{
     display: flex;
     flex-direction: row;
     flex-wrap:nowrap;
-    flex:auto;    
+    justify-content: flex-start;
+    gap: 10px;
+    list-style-type: none;   
 }
+
 .flexcontainer2{
     display: flex;
     flex-direction: row;
     flex-wrap:nowrap;
     width:100vw;
 }
+
+.flexcontainer3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:nowrap;
+    list-style-type: none;  
+}
+
 .flexitem1{
     margin: 5px;
     flex: 5 1 0;
@@ -210,7 +189,7 @@ input, select{
     flex: 0 0 0;
 }
 
-.flexitem5{
+.flexitem4{
     flex:auto;
     border:#010100;
     border-style:ridge;
@@ -218,7 +197,8 @@ input, select{
     border-radius: 5px;
 }
 
-/*items with the lowest order is shown last */
+
+/*Flex Item ordering - items with the lowest order is shown last */
 .item1{
     order:1;
 }
@@ -231,6 +211,40 @@ input, select{
 .item4{
     order:4;
 }
+
+/*Styling for header & nav bar*/
+.header{
+    color: #010100;
+    margin: 0px;
+    padding: 0px;
+    min-width: max-content;
+}
+
+.navbar{
+    display:block;
+    background-color:#010100;
+    border-radius:30px;
+    position:sticky;
+    top: 20px;
+    width:100vw;
+}
+
+.navbar a{
+    display:inline-block;
+    margin:5px;
+    text-decoration: none;
+    color:#fd7f20;
+}
+
+.navbar a:hover{
+    color:#fc2e20;
+}
+
+.navbar-right{
+    float:right;
+}
+
+
 
 /*color palette*/
 /*https://www.canva.com/colors/color-palettes/warm-sunset/*/
