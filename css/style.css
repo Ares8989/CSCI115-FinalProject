@@ -10,56 +10,59 @@
     font-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
     vertical-align: baseline;
-    background: transparent;    
+    background: transparent;
 }
 
 /*Styling for background*/
-body{
+body {
     background-color: #fdb750;
     background-image: url(../img/checkered-light-emboss.png);
-    background-repeat:repeat;
+    background-repeat: repeat;
     background-position: left bottom, center;
-    background-attachment:scroll;
+    background-attachment: scroll;
     margin: 0px;
-} 
+}
 
-.background{
-    display:flex;
+.background {
+    display: flex;
     flex-direction: column;
     background-color: #fdb750;
     background-image: url(../img/checkered-light-emboss.png);
-    background-repeat:repeat;
+    background-repeat: repeat;
     background-position: left bottom, center;
-    background-attachment:scroll;
+    background-attachment: scroll;
     margin: 0px;
-    height:100vh;
+    height: 100vh;
 }
 
 
 /*Styling for Tables rows*/
-table{
-    overflow:scroll;
-}
-td{
-    padding-left:5px;
+table {
+    overflow: scroll;
 }
 
-th{
+td {
+    padding-left: 5px;
+}
+
+th {
     text-align: left;
 }
 
 /*Styling for Lists*/
-li a:visited, li a:link{
-    color:black;
+li a:visited,
+li a:link {
+    color: black;
     text-decoration: none;
 }
 
-li a:hover{
-    color:#fc2e20;
-    text-decoration: none;   
+li a:hover {
+    color: #fc2e20;
+    text-decoration: none;
 }
 
-input, select{
+input,
+select {
     background-color: white;
     border: 1px;
     padding: 3px 5px;
@@ -67,28 +70,28 @@ input, select{
 }
 
 /*Text Styling*/
-.heading1{
+.heading1 {
     font-size: 36px;
     font-weight: bold;
 }
 
-.heading2{
+.heading2 {
     font-size: 24px;
-    font-weight: bold;  
+    font-weight: bold;
 }
 
-.heading3{
+.heading3 {
     font-size: 18px;
-    font-weight: bold;     
+    font-weight: bold;
 }
 
-.paragraph1{
+.paragraph1 {
     font-size: 16px;
     margin: 14px 0px;
 }
 
 /*Styling for Forms*/
-.buttonstyle{
+.buttonstyle {
     background-color: white;
     padding: 3px 5px;
     border-style: groove;
@@ -97,7 +100,7 @@ input, select{
     border-radius: 5px;
 }
 
-.textbox{
+.textbox {
     background-color: white;
     padding: 3px 5px;
     border-color: #010100;
@@ -106,172 +109,179 @@ input, select{
     width: 0;
 }
 
-.listItems1{
+.listItems1 {
     font-size: 12px;
     margin-left: 7px;
 }
 
-.listItems2{
+.listItems2 {
     font-size: 12px;
     margin-right: 3px;
 }
 
-.barheading{
+.barheading {
     font-weight: bold;
     font-size: larger;
     text-align: center;
 }
 
 /*Styling for sidebar*/
-.sidebar{
+.sidebar {
     width: 125px;
     text-align: center;
 }
 
 /*Pushes elements to the left*/
-.floatleft{
+.floatleft {
     float: left;
-    left:0;
+    left: 0;
 }
 
 /*pushes elements to the right*/
-.floatright{
+.floatright {
     float: right;
-    right:0;
+    right: 0;
 }
 
 /*Removes all float properties*/
-.clearfloat{
+.clearfloat {
     clear: both;
 }
 
-.spacer{
-    height:100%;
+.spacer {
+    height: 100%;
 }
 
 /*Styling for footer elements*/
-.footer{
+.footer {
     width: 100vw;
     height: 50px;
 }
 
 /*Search bar Styling*/
 
-.searchtext{
+.searchtext {
     border-radius: 30px;
     border-color: black;
     border-style: solid;
     text-align: center;
     padding: 2px;
-    margin-top:2px;
-    margin-right:3px;
+    margin-top: 2px;
+    margin-right: 3px;
 }
 
 /*Flex container Styling*/
-.flexcontainer1{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:nowrap;
-    justify-content: flex-start;
-    gap: 10px;
-    list-style-type: none;   
-}
-
-.flexcontainer2{
-    display: flex;
-    flex-direction: row;
-    flex-wrap:nowrap;
-    width:100vw;
-}
-
-.flexcontainer3{
+.flexcontainer1 {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    list-style-type: none;  
+    justify-content: flex-start;
+    gap: 10px;
+    list-style-type: none;
 }
 
-.flexitem1{
+.flexcontainer2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100vw;
+}
+
+.flexcontainer3 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+
+.flexitem1 {
     margin: 5px;
     flex: 5 1 0;
     flex-wrap: wrap;
 }
-.flexitem2{
+
+.flexitem2 {
     margin: 8px;
     background-color: transparent;
     max-width: fit-content;
     flex: 1 0 0;
 }
-.flexitem3{
+
+.flexitem3 {
     margin: 3px;
     flex: 0 0 0;
 }
 
-.flexitem4{
-    flex:auto;
-    border:#010100;
-    border-style:ridge;
+.flexitem4 {
+    flex: auto;
+    border: #010100;
+    border-style: ridge;
     border-width: 1px;
     border-radius: 5px;
 }
 
 /*Flex Item ordering - items with the lowest order is shown last */
-.item1{
-    order:1;
+.item1 {
+    order: 1;
 }
-.item2{
-    order:2;
+
+.item2 {
+    order: 2;
 }
-.item3{
-    order:3;
+
+.item3 {
+    order: 3;
 }
-.item4{
-    order:4;
+
+.item4 {
+    order: 4;
 }
 
 /*Styling for header & nav bar*/
-.header{
+.header {
     color: #010100;
     margin: 0px;
     padding: 0px;
     min-width: max-content;
 }
 
-.navbar{
-    display:block;
-    background-color:#010100;
-    border-radius:30px;
-    position:sticky;
+.navbar {
+    display: block;
+    background-color: #010100;
+    border-radius: 30px;
+    position: sticky;
     top: 20px;
-    width:100vw;
+    width: 100vw;
 }
 
-.navbar a{
-    display:inline-block;
-    margin:5px;
+.navbar a {
+    display: inline-block;
+    margin: 5px;
     text-decoration: none;
-    color:#fd7f20;
+    color: #fd7f20;
 }
 
-.navbar a:hover{
-    color:#fc2e20;
+.navbar a:hover {
+    color: #fc2e20;
 }
 
-.navbar-right{
-    float:right;
+.navbar-right {
+    float: right;
 }
 
 @media (max-width:550px) {
-    .searchtext{
-        display:none;
+    .searchtext {
+        display: none;
     }
 }
+
 @media (max-width:350px) {
-    .header{
-        display:none;
+    .header {
+        display: none;
     }
-    .sidebar{
-        display:none;
+
+    .sidebar {
+        display: none;
     }
 }
 
