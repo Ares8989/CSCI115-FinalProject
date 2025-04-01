@@ -2,15 +2,18 @@
 /*Student ID: 665571535*/
 
 /*set a default for all tags*/
-* {
+*{
+    font-size: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    vertical-align: baseline;
+    background: transparent;    
+}
+
+li, ol {
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    vertical-align: baseline;
-    background: transparent;
 }
 
 /*Styling for background*/
@@ -268,6 +271,21 @@ select {
 .navbar-right {
     float: right;
 }
+
+/*Styling for rubric*/
+.rubric{
+    border:1px solid #010100;
+    border-collapse: collapse;
+}
+
+.rubric th{
+    padding-left:5px;
+    padding-right:5px;
+}
+
+.rubric td{
+    padding-right:5px;
+} 
 
 @media (max-width:550px) {
     .searchtext {
