@@ -18,7 +18,7 @@
 <body>
     <script>
         let ratings = initializeRatingSystem();
-        let reviewName = "Zelda Occarina of Time";//Specific for this review
+        let reviewName = "Zelda: Occarina of Time";//Specific for this review
         let documentName = document.documentURI;
         createReviewObj(reviewName, documentName, ratings);
         writeToRatingSystem(ratings);   
@@ -31,7 +31,11 @@
                 <a href="../news.html">News</a>
                 <a href="../signup.html">Signup</a>
                 <a href="mailto:patrick.candy@my.viu.ca">Contact</a>
-                <input class="navbar-right searchtext" type="text" name="search" placeholder="Search this website">
+                <div class="navbar-right">
+                    <form action="https://www.google.com/search" method="get" name="searchform">
+                    <input class="searchtext" type="text" name="q" placeholder="Search with google">
+                    </form>
+                </div>
             </nav>
         </div>
         <div class="flexcontainer1"><!--make the body items a flex box-->
@@ -68,7 +72,7 @@
                         onclick="downvoteReview(reviewName,ratings); writeToRatingSystem(ratings);alert('Review downvoted');">&#9660</button>
                 </div>
                 <div class="heading2">Details</div>
-                <div class="paragraph1">
+                <div>
                     <table style="text-align: left;">
                         <tr>
                             <th>Publisher:</th>
@@ -88,9 +92,12 @@
                         </tr>
                     </table>
                 </div>
-                <div class="heading2">Gameplay</div>
-                <div class="paragraph1">The Classic!</div>
-                <div class="heading2">Summary</div>
+                <div>
+                    <img style="width:50%; height:50%" src="../img/The_Legend_of_Zelda_Ocarina_of_Time.jpg">
+                </div>
+                <div class="heading2">Summary:</div>
+                <div class="paragraph1">The Classic N64 Adventure Game. Play as Link, the young Hyrulian warrior and save princess Zelda!</div>
+                <div class="heading2">Rating: 9.0/10</div>
             </div><!--Closes the main body-->
         </div><!--Closes flexbox-->
         <div class="clearfloat"></div>

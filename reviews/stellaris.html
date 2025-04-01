@@ -9,21 +9,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="VIU, Game Reviews">
     <meta name="robots" content="INDEX, FOLLOW">
-    <title>Gam3r Reviews</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title id="tabTitle"></title>
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="shortcut icon" href="#">
-    <script src="java_script/review_rating.js"></script>
+    <script src="../java_script/review_rating.js"></script>
 </head>
 
 <body>
-    <script>let ratings = initializeRatingSystem()</script>
+    <script>
+        let ratings = initializeRatingSystem();
+        let reviewName = "Stellaris";//Specific for this review
+        let documentName = document.documentURI;
+        createReviewObj(reviewName, documentName, ratings);
+        writeToRatingSystem(ratings);   
+    </script>
     <div class="background">
         <div class="header flexcontainer3">
             <nav class="navbar">
-                <a href="index.html">Main Page</a>
-                <a href="reviews.html">Reviews</a>
-                <a href="news.html">News</a>
-                <a href="signup.html">Signup</a>
+                <a href="../index.html">Main Page</a>
+                <a href="../reviews.html">Reviews</a>
+                <a href="../news.html">News</a>
+                <a href="../signup.html">Signup</a>
                 <a href="mailto:patrick.candy@my.viu.ca">Contact</a>
                 <div class="navbar-right">
                     <form action="https://www.google.com/search" method="get" name="searchform">
@@ -45,6 +51,7 @@
                         <script>printTopFive(ratings);</script>
                     </ol>
                 </div>
+
             </div>
             <div class="sidebar floatright flexitem2 item3">
                 <div class="barheading">Game Stores</div>
@@ -58,24 +65,49 @@
                 </div>
             </div>
             <div class="flexitem1 item2"><!-- Opens main body-->
-                <div class="heading1">Gam3r Reviews</div>
-                <div class="paragraph1">Welcome to Gam3r Reviews: a website for gamers, by gamers.</div>
-                <div class="paragraph1">
-                    Have you ever read a review on a website that reads as though the person never used the product?
-                    Have you ever read a review and wondered if the person writing it is a actual person and not a AI?
+                <div id="reviewTitle" class="heading1"></div>
+                <div>Rate this review <button style="color:green;"
+                        onclick="upvoteReview(reviewName,ratings); writeToRatingSystem(ratings);alert('Review upvoted');">&#9650</button>
+                    <button style="color:#fc2e20;"
+                        onclick="downvoteReview(reviewName,ratings); writeToRatingSystem(ratings);alert('Review downvoted');">&#9660</button>
                 </div>
-                <div class="paragraph1">
-                    Here at Gam3r Reviews, we pledge that all of our reviews are written by <strong>actual people who
-                        actually enjoy video games.</strong>
-                    We aim to provide you with a in-depth, but unbaised, idea of whether or not a game is a good buy, or
-                    going to make you (or your wallet) cry.
+                <div class="heading2">Details</div>
+                <div>
+                    <table style="text-align: left;">
+                        <tr>
+                            <th>Publisher:</th>
+                            <td style="padding-left: 5px;">Paradox Interactive</td>
+                        </tr>
+                        <tr>
+                            <th>Release Date:</th>
+                            <td style="padding-left: 5px;">2016</td>
+                        </tr>
+                        <tr>
+                            <th>Number of Players:</th>
+                            <td style="padding-left: 5px;">up to 32</td>
+                        </tr>
+                        <tr>
+                            <th>Systems Available:</th>
+                            <td style="padding-left: 5px;">Linux, Windows, Playstation 4, Xbox one</td>
+                        </tr>
+                    </table>
                 </div>
+                <div>
+                    <img style="width:50%; height:50%"  src="../img/Stellaris_cover.png">
+                </div>
+                <div class="heading2">Summary:</div>
+                <div class="paragraph1">Play as a star-faring empire in the 4X strategy game!</div>
+                <div class="heading2">Rating: 7.5/10</div>
             </div><!--Closes the main body-->
         </div><!--Closes flexbox-->
         <div class="clearfloat"></div>
         <div class="spacer"></div>
         <div class="footer">All rights reserved for Patrick Candy</div>
     </div><!--Closes Background-->
+    <script>
+        document.getElementById("reviewTitle").innerText = reviewName;
+        document.getElementById("tabTitle").innerText = "Gam3r R3views: " + reviewName;
+    </script>
 </body>
 
 </html>

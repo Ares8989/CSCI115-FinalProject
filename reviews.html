@@ -25,7 +25,11 @@
                 <a href="news.html">News</a>
                 <a href="signup.html">Signup</a>
                 <a href="mailto:patrick.candy@my.viu.ca">Contact</a>
-                <input class="navbar-right searchtext" type="text" name="search" placeholder="Search this website">
+                <div class="navbar-right">
+                    <form action="https://www.google.com/search" method="get" name="searchform">
+                    <input class="searchtext" type="text" name="q" placeholder="Search with google">
+                    </form>
+                </div>
             </nav>
         </div>
         <div class="flexcontainer1"><!--make the body items a flex box-->
@@ -57,9 +61,12 @@
             <div class="flexitem1 item2"><!-- Opens main body-->
                 <div class="heading1">List of all Gam3r Reviews</div>
                 <ol>
-                    <li><a class="paragraph1" href="./reviews/zelda_occarina_of_time.html">Zelda Occarina of Time</a>
-                    </li>
+                    <li><a class="paragraph1" href="./reviews/zelda_occarina_of_time.html">Zelda: Occarina of Time</a></li>
                     <li><a class="paragraph1" href="./reviews/control.html">Control</a></li>
+                    <li><a class="paragraph1" href="./reviews/subnautica.html">Subnautica</a></li>
+                    <li><a class="paragraph1" href="./reviews/stellaris.html">Stellaris</a></li>
+                    <li><a class="paragraph1" href="./reviews/mount_and_blade_II_bannerlord.html">Mount & Blade II: Bannerlord</a></li>
+                    <li><a class="paragraph1" href="./reviews/stardew_valley.html">Stardew Valley</a></li>
                 </ol>
             </div><!--Closes the main body-->
         </div><!--Closes flexbox-->
